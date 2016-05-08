@@ -1,0 +1,59 @@
+// === THEMES ===
+// Allowed Values: Dark, Light, Pink, Default
+$theme: Default;
+
+//Allowed Values : blue-beans, rogers-rover, pastry-pizza
+$brand: rogers-rover;
+
+// === COLORS ===
+$text-color: #222222;
+$theme-color: #170a48;
+$body-background-color: #fff;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+$bg-sidebar-hover: orange;
+$sidebar-text-hover: $text-color;
+
+@if $theme == Dark {
+  $text-color: #fff;
+  $body-background-color: #22222a;
+  $theme-color: #42424a;
+  $secondary-color: #c24721;
+  $ternary-color: #698932;
+  $link-color: $secondary-color;
+  $menu-item-color: white;
+  $bg-sidebar-hover: orange;
+  $sidebar-text-hover: $text-color;
+} @else if $theme == Light {
+  $text-color: #000;
+  $body-background-color: #fff;
+  $theme-color: #372a27;
+  $secondary-color: #d26741;
+  $ternary-color: #b9da63;
+  $link-color: $secondary-color;
+  $menu-item-color: white;
+  $bg-sidebar-hover: orange;
+  $sidebar-text-hover: $text-color;
+} @else if $theme == Pink {
+  $text-color: #000;
+  $body-background-color: #fff;
+  $theme-color: #f4d1ff;
+  $secondary-color: #fff4d1;
+  $ternary-color: #d1dcff;
+  $link-color: $secondary-color;
+  $menu-item-color: white;
+  $bg-sidebar-hover: #85a2ff;
+  $sidebar-text-hover: $text-color;
+}
+
+// === FONTS ===
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: "Titillium Web", Georgia, serif;
+
+// === SIZES ===
+$content-width: 960px;
+$header-height: 60px;
+$footer-height: 90px;
+$col: col-width($columns: 8);
